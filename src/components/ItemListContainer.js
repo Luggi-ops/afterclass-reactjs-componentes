@@ -105,8 +105,8 @@ const ItemListContainer = () => {
             
                     {
                         data.map((product) => (
-                            <div className="col-4">
-                                <ItemCard key={product.id} nombre={product.name} descripcion={product.description} img={product.img} precio={product.price} stock={product.stock}/>
+                            <div className="col-4" key={product.id}>
+                                <ItemCard nombre={product.name} descripcion={product.description} img={product.img} precio={product.price} stock={product.stock}/>
                             </div>
                         ))
                     }
