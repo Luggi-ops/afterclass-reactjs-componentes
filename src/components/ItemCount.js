@@ -19,10 +19,14 @@ const ItemCount = ({stock, addToCart}) => {
 
   return (
     <div>
-        <Button onClick={handleSubstract}> - </Button>
-        <h3> { count } </h3>
-        <Button onClick={handleAdd}> + </Button>
-        <Button  style={{width: "100%", marginTop: "1rem"}} disabled={stock<=0} onClick={() => addToCart(count)}>Añadir al carrito</Button>
+        <Button className='mx-2' onClick={handleSubstract}>
+                  -
+        </Button>
+        <span>{ count }</span>
+        <Button className='mx-2' onClick={handleAdd} >
+            +
+        </Button>
+        <Button className='my-2' disabled={stock<=0} onClick={() => addToCart(count)}>Añadir al carrito</Button>
     </div>
   )
 }

@@ -17,7 +17,7 @@ const ItemCard = (props) => {
                     width: '18rem'
                 }}
             >
-                <img src={img} />
+                <img src={img} style={{height: "15rem", objectFit: "cover",}}/>
                 <CardBody>
                     <CardTitle tag="h5">
                         {nombre}
